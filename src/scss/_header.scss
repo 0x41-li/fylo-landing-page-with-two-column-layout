@@ -1,0 +1,38 @@
+header {
+  height: 24px;
+  margin-top: 24px;
+
+  padding: 0px 24px !important;
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 65px;
+    height: 49px;
+  }
+}
+
+.header__logo__svg {
+  @media screen and (min-width: 1200px) {
+    width: 166px;
+    height: 49px;
+  }
+}
+
+.header__nav__ul {
+  gap: 24px;
+
+  @media screen and (min-width: 1200px) {
+    gap: 58px;
+  }
+}
+
+.header__ul__link {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
