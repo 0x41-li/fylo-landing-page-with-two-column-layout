@@ -4,7 +4,7 @@ import { ReactComponent as Logo } from "../assets/images/logo.svg";
 
 export default function Header() {
   return (
-    <header className="container d-flex justify-content-between align-items-center p-xl-0">
+    <header className="container d-flex justify-content-between align-items-center p-md-0">
       <div className="header__logo">
         <a href="#" aria-label="Go To Home">
           <Logo className="header__logo__svg" />
@@ -13,17 +13,26 @@ export default function Header() {
       <nav className="header__nav">
         <ul className="header__nav__ul d-flex list-unstyled">
           <li>
-            <a className="header__ul__link text-primary text-decoration-none" href="#">
+            <a
+              className="header__ul__link text-primary text-decoration-none font-raleway"
+              href="#"
+            >
               Features
             </a>
           </li>
           <li>
-            <a className="header__ul__link text-primary text-decoration-none" href="#">
+            <a
+              className="header__ul__link text-primary text-decoration-none font-raleway"
+              href="#"
+            >
               Team
             </a>
           </li>
           <li>
-            <a className="header__ul__link text-primary text-decoration-none" href="#">
+            <a
+              className="header__ul__link text-primary text-decoration-none font-raleway"
+              href="#"
+            >
               Sign In
             </a>
           </li>

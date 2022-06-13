@@ -1,0 +1,134 @@
+.hero {
+  margin-top: 98px;
+  padding: 0 28px;
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 86px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    align-items: start;
+  }
+}
+
+.hero__left-part,
+.hero__right-part {
+  max-width: 430px;
+
+  @media screen and (min-width: 992px) {
+    max-width: unset;
+    flex: 0 1 50%;
+  }
+}
+
+// hero left part
+.hero__left-part {
+  @media screen and (min-width: 1440px) {
+    flex: 0 0 627px;
+  }
+}
+
+h1 {
+  margin-top: 40px;
+
+  font-size: 24px;
+  line-height: 36px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 40px;
+    line-height: 60px;
+    margin-top: 0;
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin-top: 77px;
+  }
+}
+
+.hero__para {
+  margin-top: 24px;
+
+  font-size: 14px;
+  line-height: 21px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    max-width: 585px;
+    margin-top: 15px;
+    letter-spacing: 0.53125px;
+  }
+}
+
+// form
+.hero__form {
+  margin-top: 32px;
+
+  @media screen and (min-width: 1440px) {
+    max-width: 536px;
+    margin-top: 25px;
+  }
+}
+.hero__input-box {
+  @media screen and (min-width: 992px) {
+    flex: 0 1 60%;
+  }
+  @media screen and (min-width: 1440px) {
+    flex: 0 0 320px;
+  }
+}
+
+.hero__input {
+  height: 40px;
+
+  border: 0.625px solid #07043b;
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15925);
+  border-radius: 3.125px;
+
+  @media screen and (min-width: 992px) {
+    height: 45px;
+  }
+}
+
+.hero__btn {
+  margin-top: 16px;
+
+  height: 40px;
+
+  font-size: 14px;
+  line-height: 16px;
+
+  border: none;
+
+  @media screen and (min-width: 992px) {
+    flex: 0 1 40%;
+    height: 45px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    flex: 0 0 200px;
+  }
+
+  &:hover {
+    background: #6C9BFF;
+  }
+}
+
+// right part
+.hero__right-part {
+  @media screen and (min-width: 1440px) {
+    flex: 0 0 640px;
+  }
+}
+
+.hero__img {
+  max-width: 304px;
+
+  @media screen and (min-width: 992px) {
+    width: 100%;
+    max-width: 640px;
+  }
+}
