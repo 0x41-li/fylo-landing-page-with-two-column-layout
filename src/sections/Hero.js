@@ -24,7 +24,7 @@ export default function Hero() {
   }
 
   return (
-    <section className="hero container p-lg-0 d-flex flex-column mx-auto flex-lg-row align-items-lg-center gap-lg-5 justify-content-xxl-between">
+    <section className="hero container p-lg-0 d-flex flex-column mx-auto flex-lg-row align-items-lg-center gap-lg-5 justify-content-xxl-between gap-xxl-0">
       <div className="hero__left-part order-1 order-lg-0 mx-auto mx-lg-0">
         <h1 className="text-primary text-center font-open-sans fw-bold text-lg-start">
           All your files in one secure location, accessible anywhere.

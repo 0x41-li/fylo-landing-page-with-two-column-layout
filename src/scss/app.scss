@@ -1,6 +1,7 @@
 @import "custom.scss";
 @import "header.scss";
 @import "hero.scss";
+@import "first-section.scss";
 
 *,
 *::after,
@@ -19,10 +20,21 @@ ul {
 
 //  Utilities
 
+// fonts
 .font-open-sans {
   font-family: "Open Sans", Arial, Helvetica, sans-serif
 }
 
 .font-raleway {
   font-family: "Raleway", Arial, Helvetica, sans-serif
+}
+
+// max-width
+
+.mw-430 {
+  max-width: 430px;
+
+  @media screen and (min-width: 992px) {
+    max-width: unset;
+  }
 }
