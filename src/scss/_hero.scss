@@ -126,6 +126,11 @@ h1 {
 
   border: none;
 
+  &:hover,&:focus {
+    background: #6c9bff;
+    box-shadow: unset;
+  }
+
   @media screen and (min-width: 992px) {
     flex: 0 1 40%;
     height: 45px;
@@ -133,10 +138,6 @@ h1 {
 
   @media screen and (min-width: 1440px) {
     flex: 0 0 200px;
-  }
-
-  &:hover {
-    background: #6c9bff;
   }
 }
 
