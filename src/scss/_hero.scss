@@ -126,7 +126,8 @@ h1 {
 
   border: none;
 
-  &:hover,&:focus {
+  &:hover,
+  &:focus {
     background: #6c9bff;
     box-shadow: unset;
   }
