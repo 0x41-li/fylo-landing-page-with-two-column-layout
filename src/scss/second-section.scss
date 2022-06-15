@@ -1,0 +1,62 @@
+.second-section {
+  background: #575988;
+
+  padding: 54px 47px 71px 48px;
+}
+
+.second-section__h2 {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.second-section__para {
+  margin-top: 16px;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.second-section__input {
+  margin-top: 24px;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 1px 1px 3px rgba(7, 4, 59, 0.157043);
+  border-radius: 1.47059px;
+
+  height: 32px;
+
+  padding: 0px 8px;
+
+  font-size: 12px;
+  line-height: 14px;
+
+  max-width: 240px;
+
+  &::placeholder {
+    font-family: "Raleway";
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+
+    color: #c0c0c0;
+  }
+
+  &:focus-visible {
+    box-shadow: unset;
+    border: unset;
+  }
+}
+
+.second-section__btn {
+  margin-top: 8px;
+
+  box-shadow: 1px 1px 3px rgba(7, 4, 59, 0.157043);
+  border-radius: 1.47059px;
+
+  width: 100%;
+
+  font-size: 10px;
+  line-height: 12px;
+
+  max-width: 240px;
+
+}
