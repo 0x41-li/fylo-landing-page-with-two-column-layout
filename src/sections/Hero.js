@@ -7,20 +7,27 @@ export default function Hero() {
   const [email, setEmail] = useState({
     value: "",
     valid: true,
+    submittedOnce: false,
   });
 
   function emailInputHandler(e) {
     const target = e.target;
 
-    setEmail({ value: target.value, valid: isValidEmail(target.value) });
+    setEmail((oldEmail) => ({
+      value: target.value,
+      valid: oldEmail.submittedOnce ? isValidEmail(target.value) : true,
+      submittedOnce: oldEmail.submittedOnce,
+    }));
   }
 
   function formSubmitHandler(e) {
     e.preventDefault();
 
-    if (!isValidEmail(email.value)) {
-      setEmail((oldEmail) => ({ ...oldEmail, valid: false }));
-    }
+    setEmail({
+      value: email.value,
+      valid: !isValidEmail(email.value) ? false : true,
+      submittedOnce: true,
+    });
   }
 
   return (
@@ -42,8 +49,7 @@ export default function Hero() {
             <div className="hero__input-box mt-lg-0">
               <input
                 className={
-                  "hero__input form-control font-raleway" +
-                  (!email.valid && " is-invalid")
+                  "hero__input font-raleway" + (!email.valid && " is-invalid")
                 }
                 type="text"
                 name="email"

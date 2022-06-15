@@ -83,6 +83,9 @@ h1 {
 
 .hero__input {
   height: 40px;
+  width: 100%;
+
+  padding: 0 21px;
 
   border: 0.625px solid #07043b;
   box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15925);
@@ -90,6 +93,22 @@ h1 {
 
   &.is-invalid {
     background-image: unset;
+    border-color: $form-feedback-invalid-color;
+  }
+
+  &::placeholder {
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+
+    letter-spacing: 0.466667px;
+
+    color: #c2c2c2;
+  }
+
+  &:focus {
+    outline: unset;
   }
 
   @media screen and (min-width: 992px) {
@@ -117,7 +136,7 @@ h1 {
   }
 
   &:hover {
-    background: #6C9BFF;
+    background: #6c9bff;
   }
 }
 
