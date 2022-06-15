@@ -46,7 +46,7 @@ export default function Hero() {
             onSubmit={formSubmitHandler}
             className="hero__form d-lg-flex gap-lg-3 justify-content-xxl-between"
           >
-            <div className="hero__input-box mt-lg-0">
+            <div className="hero__input-box mt-lg-0 position-relative">
               <input
                 className={
                   "hero__input font-raleway" + (!email.valid && " is-invalid")
@@ -58,7 +58,7 @@ export default function Hero() {
                 onChange={emailInputHandler}
               />
               {!email.valid && (
-                <p className="invalid-feedback">Please check your email</p>
+                <p className="invalid-feedback position-absolute top-100">Please check your email</p>
               )}
             </div>
             <button className="hero__btn btn btn-secondary d-block w-100 font-raleway fw-bold mt-lg-0">
