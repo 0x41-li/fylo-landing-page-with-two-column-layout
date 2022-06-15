@@ -1,5 +1,9 @@
 .first-section {
   margin-top: 90px;
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 164px;
+  }
 }
 
 .first-section__content {
