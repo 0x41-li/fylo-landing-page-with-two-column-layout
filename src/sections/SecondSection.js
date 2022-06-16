@@ -63,7 +63,7 @@ export default function SecondSection() {
                   />
 
                   {!email.valid && (
-                    <p className="second-section__error-form text-white font-open-sans">
+                    <p className="second-section__error-form text-white font-open-sans text-center text-lg-start">
                       Please check your email
                     </p>
                   )}
