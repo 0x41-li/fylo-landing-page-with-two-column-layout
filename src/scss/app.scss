@@ -3,6 +3,7 @@
 @import "hero.scss";
 @import "first-section.scss";
 @import "second-section.scss";
+@import "footer.scss";
 
 *,
 *::after,
@@ -27,19 +28,31 @@ img {
 
 // fonts
 .font-open-sans {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
 
 .font-raleway {
-  font-family: "Raleway", Arial, Helvetica, sans-serif
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
 }
 
 // max-width
-
 .mw-430 {
   max-width: 430px;
 
   @media screen and (min-width: 992px) {
     max-width: unset;
   }
+}
+
+// gaps
+.gap-16 {
+  gap: 16px;
+}
+
+.mt-16 {
+  margin-top: 16px;
+}
+
+.mt-32 {
+  margin-top: 32px;
 }

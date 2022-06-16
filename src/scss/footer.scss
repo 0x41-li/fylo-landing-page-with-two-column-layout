@@ -1,0 +1,35 @@
+footer {
+  background: #07043b;
+
+  padding: 65px 39px 42px 39px;
+}
+
+// logo
+.footer__logo__svg {
+  width: 105px;
+  height: 30px;
+}
+
+// contact list
+.footer__contact-list__p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+// menu list
+.footer__menu-list__p,
+.footer__smenu-list__p {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+// social media links/icons
+.footer__social-media {
+  gap: 10px;
+}
+
+.footer__social-media__a {
+  width: 27px;
+  height: 27px;
+  border: 1px solid #ffffff;
+}
