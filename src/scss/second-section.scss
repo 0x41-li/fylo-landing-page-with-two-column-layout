@@ -2,19 +2,58 @@
   background: #575988;
 
   padding: 54px 47px 71px 48px;
+
+  @media screen and (min-width: 1200px) {
+    padding: 100px 0px 85px 0px;
+  }
 }
 
+// cols
+.second-section__form-col {
+  @media screen and (min-width: 1440px) {
+    flex: 0 0 480px;
+  }
+}
+
+.second-section__text-part-col {
+  @media screen and (min-width: 1440px) {
+    flex: 0 0 533px;
+  }
+}
+
+.second-section__row {
+  @media screen and (min-width: 1440px) {
+    gap: 227px !important;
+  }
+}
+
+// text part
 .second-section__h2 {
   font-size: 18px;
   line-height: 24px;
+
+  @media screen and (min-width: 992px) {
+    font-size: 32px;
+    line-height: 48px;
+  }
 }
 
 .second-section__para {
   margin-top: 16px;
   font-size: 14px;
   line-height: 21px;
+
+  max-width: 533px;
+
+  @media screen and (min-width: 992px) {
+    font-size: 16px;
+    line-height: 24px;
+
+    margin-top: 17px;
+  }
 }
 
+// form part
 .second-section__input {
   margin-top: 24px;
   width: 100%;
@@ -38,12 +77,37 @@
     line-height: 12px;
 
     color: #c0c0c0;
+
+    @media screen and (min-width: 992px) {
+      font-size: 12px;
+      line-height: 14px;
+    }
   }
 
   &:focus-visible {
     box-shadow: unset;
-    border: unset;
+    outline: unset;
   }
+
+  &.is-invalid {
+    border: 1px solid #ef4877;
+  }
+
+  @media screen and (min-width: 992px) {
+    max-width: 480px;
+    padding: 0 22px;
+    height: 48px;
+
+    box-shadow: 2px 3px 6px rgba(7, 4, 59, 0.157043);
+    border-radius: 3.125px;
+  }
+}
+
+.second-section__error-form {
+  margin-top: 4px;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.4px;
 }
 
 .second-section__btn {
@@ -53,10 +117,34 @@
   border-radius: 1.47059px;
 
   width: 100%;
+  height: 32px;
 
   font-size: 10px;
   line-height: 12px;
 
   max-width: 240px;
 
+  transition: background-color 0.15s;
+
+  &:hover,
+  &:focus {
+    border: unset;
+    box-shadow: 1px 1px 3px rgba(7, 4, 59, 0.157043);
+    outline: unset;
+  }
+
+  &:hover {
+    background-color: #6c9bff;
+  }
+
+  @media screen and (min-width: 992px) {
+    max-width: 200px;
+    font-size: 14px;
+    line-height: 16px;
+    height: 48px;
+
+    box-shadow: 2px 3px 6px rgba(7, 4, 59, 0.157043);
+    border-radius: 3.125px;
+    margin-top: 16px;
+  }
 }
