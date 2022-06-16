@@ -1,31 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 
-export default function SecondSection() {
-  const [email, setEmail] = useState({
-    value: "",
-    valid: true,
-    submittedOnce: false,
-  });
-
-  function emailInputHandler(e) {
-    const target = e.target;
-
-    setEmail((oldEmail) => ({
-      value: target.value,
-      valid: oldEmail.submittedOnce ? isValidEmail(target.value) : true,
-      submittedOnce: oldEmail.submittedOnce,
-    }));
-  }
-
-  function formSubmitHandler(e) {
-    e.preventDefault();
-
-    setEmail({
-      value: email.value,
-      valid: !isValidEmail(email.value) ? false : true,
-      submittedOnce: true,
-    });
-  }
+export default function SecondSection(props) {
   return (
     <section className="second-section px-lg-0">
       <div className="container p-0">
@@ -46,23 +21,24 @@ export default function SecondSection() {
             <div className="second-section__form mx-auto mw-430 mx-lg-0">
               <form
                 action=""
-                onSubmit={formSubmitHandler}
+                onSubmit={(e) => props.formSubmitHandler(e, "sEmail")}
                 className="second-section__form"
+                noValidate
               >
                 <div className="second-section__input-box">
                   <input
                     className={
                       "second-section__input border-0 text-primary font-raleway mx-auto d-block mx-lg-0 mt-lg-0" +
-                      (!email.valid ? " is-invalid" : "")
+                      (!props.formData.sEmail.valid ? " is-invalid" : "")
                     }
                     type="email"
-                    name="semail"
+                    name="sEmail"
                     placeholder="email@example.com"
-                    value={email.value}
-                    onChange={emailInputHandler}
+                    value={props.formData.sEmail.value}
+                    onChange={props.handleInputChange}
                   />
 
-                  {!email.valid && (
+                  {!props.formData.sEmail.valid && (
                     <p className="second-section__error-form text-white font-open-sans text-center text-lg-start">
                       Please check your email
                     </p>
@@ -78,10 +54,4 @@ export default function SecondSection() {
       </div>
     </section>
   );
-}
-
-function isValidEmail(email) {
-  const re =
-    /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  return re.test(String(email).toLowerCase());
 }
