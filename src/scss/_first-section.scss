@@ -141,6 +141,10 @@
   background: #3da08f;
 
   transition: background-color 0.15s;
+
+  @media screen and (min-width: 992px) {
+    margin-top: 4px;
+  }
 }
 
 // feedback box
@@ -154,8 +158,19 @@
 
   max-width: 356px;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 992px) {
     margin-top: 45px;
+    padding: 29px 34px 36px 35px;
+  }
+}
+
+.first-section__feedback-quotes-img {
+  width: 10px;
+  height: 8px;
+
+  @media screen and (min-width: 992px) {
+    width: 13px;
+    height: 10px;
   }
 }
 

@@ -28,7 +28,7 @@ export default function SecondSection(props) {
                 <div className="second-section__input-box">
                   <input
                     className={
-                      "second-section__input border-0 text-primary font-raleway mx-auto d-block mx-lg-0 mt-lg-0" +
+                      "second-section__input border-0 text-primary font-raleway mx-auto d-block mx-lg-0" +
                       (!props.formData.sEmail.valid ? " is-invalid" : "")
                     }
                     type="email"
