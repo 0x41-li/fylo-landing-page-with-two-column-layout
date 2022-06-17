@@ -2,12 +2,27 @@ footer {
   background: #07043b;
 
   padding: 65px 39px 42px 39px;
+  @media screen and (min-width: 992px) {
+    padding: 92px 0px 86px 0px;
+  }
 }
 
 // logo
 .footer__logo__svg {
   width: 105px;
   height: 30px;
+
+  @media screen and (min-width: 992px) {
+    width: 135px;
+    height: 39px;
+  }
+}
+
+// row
+.footer__row.row {
+  @media screen and (min-width: 992px) {
+    margin-top: 38px;
+  }
 }
 
 // contact list
@@ -16,20 +31,77 @@ footer {
   line-height: 24px;
 }
 
+.footer__contact-list__li-email {
+  @media screen and (min-width: 992px) {
+    margin-top: 15px;
+  }
+}
+
 // menu list
-.footer__menu-list__p,
-.footer__smenu-list__p {
+.footer__menu-col {
+  @media screen and (min-width: 1440px) {
+    margin-left: 222px;
+  }
+}
+
+.footer__menu-list__a,
+.footer__smenu-list__a {
   font-size: 16px;
   line-height: 22px;
+
+  transition: color 0.15s;
+
+  color: #ffffff;
+
+  &:hover {
+    color: #6c9bff;
+  }
+}
+
+// smenu
+.footer__smenu-col {
+  @media screen and (min-width: 1440px) {
+    margin-left: 200px;
+  }
 }
 
 // social media links/icons
+.footer__social-media-col {
+  @media screen and (min-width: 1440px) {
+    margin-left: 185px;
+  }
+}
+
 .footer__social-media {
   gap: 10px;
+  @media screen and (min-width: 992px) {
+    gap: 12px;
+  }
 }
 
 .footer__social-media__a {
   width: 27px;
   height: 27px;
   border: 1px solid #ffffff;
+
+  transition: border-color 0.15s;
+
+  @media screen and (min-width: 992px) {
+    width: 32px;
+    height: 32px;
+  }
+
+  &:hover {
+    border: 1px solid #6c9bff;
+  }
+
+  &:hover g > path {
+    fill: #6c9bff;
+  }
+}
+
+.footer__social-media__a g > path {
+  transition: fill 0.15s;
+
+  fill: #ffffff;
 }
