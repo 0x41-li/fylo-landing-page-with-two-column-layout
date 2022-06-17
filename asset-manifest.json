@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b774be06.css",
+    "main.js": "/static/js/main.0d95c99a.js",
+    "static/media/twitter.svg": "/static/media/twitter.02d2c98e23365f88846db8589bd80a2a.svg",
+    "static/media/hero-illustration.png": "/static/media/hero-illustration.0a8697208afc3c5af5d6.png",
+    "static/media/first-section-illustration.png": "/static/media/first-section-illustration.a745ee4f58c10195df96.png",
+    "static/media/facebook.svg": "/static/media/facebook.4434636d1d8be329f610750457676f96.svg",
+    "static/media/instagram.svg": "/static/media/instagram.e7a4518d21673018ec614045aef29a07.svg",
+    "static/media/logo.svg": "/static/media/logo.eb7ef7c0d715602d2c3e5320bc9f509d.svg",
+    "static/media/white-logo.svg": "/static/media/white-logo.3a470af5caef44d7a374732474f21450.svg",
+    "index.html": "/index.html",
+    "static/media/phone-in-talk.svg": "/static/media/phone-in-talk.c6104e8f2a6d89aacb7bc7b7f84e242a.svg",
+    "static/media/email.svg": "/static/media/email.5457defeb740e1fb8c79895b2724c88a.svg",
+    "main.b774be06.css.map": "/static/css/main.b774be06.css.map",
+    "main.0d95c99a.js.map": "/static/js/main.0d95c99a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b774be06.css",
+    "static/js/main.0d95c99a.js"
+  ]
+}
