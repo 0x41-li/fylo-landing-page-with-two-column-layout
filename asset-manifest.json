@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/fylo-landing-page-with-two-column-layout/static/css/main.1e3a48c3.css",
-    "main.js": "/fylo-landing-page-with-two-column-layout/static/js/main.56677850.js",
+    "main.js": "/fylo-landing-page-with-two-column-layout/static/js/main.2f3e01e2.js",
     "static/media/twitter.svg": "/fylo-landing-page-with-two-column-layout/static/media/twitter.02d2c98e23365f88846db8589bd80a2a.svg",
     "static/media/hero-illustration.png": "/fylo-landing-page-with-two-column-layout/static/media/hero-illustration.0a8697208afc3c5af5d6.png",
     "static/media/first-section-illustration.png": "/fylo-landing-page-with-two-column-layout/static/media/first-section-illustration.a745ee4f58c10195df96.png",
@@ -13,10 +13,10 @@
     "static/media/phone-in-talk.svg": "/fylo-landing-page-with-two-column-layout/static/media/phone-in-talk.c6104e8f2a6d89aacb7bc7b7f84e242a.svg",
     "static/media/email.svg": "/fylo-landing-page-with-two-column-layout/static/media/email.5457defeb740e1fb8c79895b2724c88a.svg",
     "main.1e3a48c3.css.map": "/fylo-landing-page-with-two-column-layout/static/css/main.1e3a48c3.css.map",
-    "main.56677850.js.map": "/fylo-landing-page-with-two-column-layout/static/js/main.56677850.js.map"
+    "main.2f3e01e2.js.map": "/fylo-landing-page-with-two-column-layout/static/js/main.2f3e01e2.js.map"
   },
   "entrypoints": [
     "static/css/main.1e3a48c3.css",
-    "static/js/main.56677850.js"
+    "static/js/main.2f3e01e2.js"
   ]
 }
