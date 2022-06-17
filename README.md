@@ -38,6 +38,7 @@ Users should be able to:
 - Semantic HTML5 markup
 - Bootstrap (Customized)
 - Mobile-first workflow
+- Sass
 - [React](https://reactjs.org/) - JS library
 
 ## Author
